@@ -4,8 +4,31 @@ require(`dotenv`).config({
 
 module.exports = {
   siteMetadata: {
-    siteTitleAlt: `Minimal Blog - Gatsby Theme`,
+    siteTitle: `RafaelDavisH`,
+    siteTitleAlt: `RafaelDavis | Portfolio & Blog`,
+    siteHeadline: `RafaelDavis - Portfolio & Blog`,
+    author: "@RafaelDavisH",
+    siteDescription: "Personal Portfolio and Blog",
+    siteUrl: "https://rafaeldavish.dev/",
+    externalLinks: [
+      {
+        name: "twitter",
+        url: "https://twitter.com/RafaelDavisH",
+      },
+      {
+        name: "github",
+        url: "https://github.com/RafaelDavisH",
+      },
+      {
+        name: "LinkedIn",
+        url: "https://www.linkedin.com/in/rafaeldavish/"
+      }
+    ],
     navigation: [
+      {
+        title: `Home`,
+        slug: `/`,
+      },
       {
         title: `Blog`,
         slug: `/blog`,
@@ -31,8 +54,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `minimal-blog - @lekoarts/gatsby-theme-minimal-blog`,
-        short_name: `minimal-blog`,
+        name: `RafaelDavisH | Personal Portfolio & Blog`,
+        short_name: `RafaelDavisH`,
         description: `Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and code highlighting.`,
         start_url: `/`,
         background_color: `#fff`,
