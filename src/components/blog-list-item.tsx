@@ -4,6 +4,7 @@ import { jsx, Styled } from "theme-ui";
 import { Box } from "@theme-ui/components";
 import { Link } from "gatsby";
 import ItemTags from "./item-tags";
+import { format } from "date-fns";
 
 type BlogListItemProps = {
   post: {

@@ -19,16 +19,8 @@ module.exports = {
         name: "github",
         url: "https://github.com/RafaelDavisH",
       },
-      {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/in/rafaeldavish/"
-      }
     ],
     navigation: [
-      {
-        title: `Home`,
-        slug: `/`,
-      },
       {
         title: `Blog`,
         slug: `/blog`,
