@@ -1,1 +1,1 @@
-{"componentChunkName":"component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-tags-query-tsx","path":"/tags","result":{"data":{"allPost":{"group":[{"fieldValue":"project","totalCount":2},{"fieldValue":"team collaboration","totalCount":2}]}},"pageContext":{}}}
+{"componentChunkName":"component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-tags-query-tsx","path":"/tags","result":{"data":{"allPost":{"group":[{"fieldValue":"project","totalCount":1},{"fieldValue":"team collaboration","totalCount":1}]}},"pageContext":{}}}
