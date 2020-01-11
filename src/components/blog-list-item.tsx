@@ -1,29 +1,41 @@
 /** @jsx jsx */
-import React from "react"
-import { jsx, Styled } from "theme-ui"
-import { Box } from "@theme-ui/components"
-import { Link } from "gatsby"
-import ItemTags from "./item-tags"
+import React from "react";
+import { jsx, Styled } from "theme-ui";
+import { Box } from "@theme-ui/components";
+import { Link } from "gatsby";
+import ItemTags from "./item-tags";
+import { format } from "date-fns";
 
 type BlogListItemProps = {
   post: {
-    slug: string
-    title: string
-    date: string
+    slug: string;
+    title: string;
+    date: string;
     tags?: {
-      name: string
-      slug: string
-    }[]
-  }
-  showTags?: boolean
-}
+      name: string;
+      slug: string;
+    }[];
+  };
+  showTags?: boolean;
+};
 
 const BlogListItem = ({ post, showTags = true }: BlogListItemProps) => (
   <Box mb={4}>
-    <Styled.a as={Link} to={post.slug} sx={{ fontSize: [1, 2, 3], color: `text` }}>
+    <Styled.a
+      as={Link}
+      to={post.slug}
+      sx={{ fontSize: [1, 2, 3], color: `text` }}
+    >
       {post.title}
     </Styled.a>
-    <p sx={{ color: `secondary`, mt: 1, a: { color: `secondary` }, fontSize: [1, 1, 2] }}>
+    <p
+      sx={{
+        color: `secondary`,
+        mt: 1,
+        a: { color: `secondary` },
+        fontSize: [1, 1, 2]
+      }}
+    >
       <time>{post.date}</time>
       {post.tags && showTags && (
         <React.Fragment>
@@ -33,6 +45,6 @@ const BlogListItem = ({ post, showTags = true }: BlogListItemProps) => (
       )}
     </p>
   </Box>
-)
+);
 
-export default BlogListItem
+export default BlogListItem;
