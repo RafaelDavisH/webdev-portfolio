@@ -19,16 +19,8 @@ module.exports = {
         name: "github",
         url: "https://github.com/RafaelDavisH",
       },
-      {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/in/rafaeldavish/"
-      }
     ],
     navigation: [
-      {
-        title: `Home`,
-        slug: `/`,
-      },
       {
         title: `Blog`,
         slug: `/blog`,
@@ -40,6 +32,13 @@ module.exports = {
     ],
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://rafaeldavis.dev`,
+        stripQueryString: `/blog?tag=foobar`
+      },
+    },
     {
       resolve: `@lekoarts/gatsby-theme-minimal-blog`,
       options: {},

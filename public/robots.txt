@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 User-agent: *
 
+=======
+User-agent: *
+
+>>>>>>> 37efdb38db32f7c330992e5b7dd0efae66f33471
 sitemap: https://minimal-blog.lekoarts.de/sitemap.xml
