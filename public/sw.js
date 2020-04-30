@@ -39,7 +39,11 @@ self.__precacheManifest = [
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
+<<<<<<< Updated upstream
     "revision": "a64673e107fb5767b83af8fca5c2d4d9"
+=======
+    "revision": "6df92cfd9da8f8b849caf008945a3742"
+>>>>>>> Stashed changes
   },
   {
     "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
