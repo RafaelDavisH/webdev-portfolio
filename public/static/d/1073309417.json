@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-{"data":{"site":{"siteMetadata":{"navigation":[{"title":"Home","slug":"/"},{"title":"Blog","slug":"/blog"},{"title":"About","slug":"/about"}]}}}}
-=======
 {"data":{"site":{"siteMetadata":{"navigation":[{"title":"Blog","slug":"/blog"},{"title":"About","slug":"/about"}]}}}}
->>>>>>> 37efdb38db32f7c330992e5b7dd0efae66f33471
