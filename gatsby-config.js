@@ -29,9 +29,21 @@ module.exports = {
         title: `About`,
         slug: `/about`,
       },
+      {
+        title: `ModernJSDev`,
+        slug: `/modernjsdev`,
+      },
     ],
   },
   plugins: [
+    {
+      resolve: `gatsby-source-youtube-v2`,
+      options: {
+        channelId: 'UCrIDNzGYX4-MEYjEvjNVFIA',
+        apiKey: process.env.YOUTUBE_MODERNJSDEV_API_KEY,
+        maxVideos: 50 // Defaults to 50
+      },
+    },
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
