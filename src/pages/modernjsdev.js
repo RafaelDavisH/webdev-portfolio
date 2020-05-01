@@ -1,5 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
+import { tailwind } from "@theme-ui/presets"
+import { Flex } from "@theme-ui/components";
 import Layout from '../../src/components/layout'
 
 export default ({ data }) => {
@@ -7,17 +9,46 @@ export default ({ data }) => {
     console.log(data)
     return  (
         <Layout>
-            <div>
-            <h1>Building with Google Maps API</h1>
+            <Flex 
+                sx={{
+                    width: ['100%', '100%', '100%'],
+                    alignItems: `center`, 
+                    justifyContent: `space-around`, 
+                    flexDirection: `column`,
+                }}
+            >
             {data.allYoutubeVideo.edges.map(({ node }) => (
-                <div key={node.videoId}>
-                    <h2>{node.title}</h2>
+                <Flex
+                    sx={{
+                        variant: `dividers.bottom`,
+                        alignItems: `center`,
+                        justifyContent: `center`,
+                        mt: 3,
+                        flexFlow: `column`
+
+                    }}
+                    key={node.videoId}
+                >
+                    <h2
+                        // sx={{
+                        //     fontSize: [2, 3, 4]
+                        // }}
+                    >
+                        {node.title}
+                    </h2>
                     <a href={`${baseurl}${node.videoId}`}>
-                        <img src={node.thumbnail.url} alt={node.title}width='300'/>
+                        <img 
+                        sx={{
+                            boxShadow: `xy`
+                        }}
+                        src={node.thumbnail.url} 
+                        alt={node.title}width='300'
+
+                        />
                     </a>
-                </div>
+                </Flex>
             ))}
-            </div>
+            </Flex>
         </Layout>
     )
 }
