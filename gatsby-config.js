@@ -38,6 +38,12 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-env-variables`,
+      options: {
+        whitelist: ["CHANNEL_ID", "YOUTUBE_MODERNJSDEV_API_KEY"]
+      },
+    },
+    {
       resolve: `gatsby-source-youtube-v2`,
       options: {
         channelId: process.env.CHANNEL_ID,
