@@ -1,3 +1,4 @@
+
 require(`dotenv`).config({
   path: `.env`,
 })
@@ -29,9 +30,21 @@ module.exports = {
         title: `About`,
         slug: `/about`,
       },
+      {
+        title: `ModernJSDev`,
+        slug: `/modernjsdev`,
+      },
     ],
   },
   plugins: [
+    {
+      resolve: `gatsby-source-youtube-v2`,
+      options: {
+        channelId: process.env.CHANNEL_ID,
+        apiKey: process.env.YOUTUBE_MODERNJSDEV_API_KEY,
+        maxVideos: 50 // Defaults to 50
+      },
+    },
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
@@ -74,8 +87,11 @@ module.exports = {
         ],
       },
     },
+    // `gatsby-transformer-sharp`, 
+    // `gatsby-plugin-sharp`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-netlify`,
     // `gatsby-plugin-webpack-bundle-analyser-v2`,
   ],
 }
+

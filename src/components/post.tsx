@@ -34,7 +34,7 @@ type PostProps = {
 };
 
 const px = [`32px`, `16px`, `8px`, `4px`];
-const shadow = px.map(v => `rgba(0, 0, 0, 0.15) 0px ${v} ${v} 0px`);
+const shadow = px.map((v) => `rgba(0, 0, 0, 0.15) 0px ${v} ${v} 0px`);
 
 const Post = ({ data: { post } }: PostProps) => (
   <Layout>
@@ -51,7 +51,7 @@ const Post = ({ data: { post } }: PostProps) => (
         color: `secondary`,
         mt: 3,
         a: { color: `secondary` },
-        fontSize: [1, 1, 2]
+        fontSize: [1, 1, 2],
       }}
     >
       <time>{post.date}</time>
@@ -69,8 +69,8 @@ const Post = ({ data: { post } }: PostProps) => (
         my: 5,
         ".gatsby-resp-image-wrapper": {
           my: [4, 4, 5],
-          boxShadow: shadow.join(`, `)
-        }
+          boxShadow: shadow.join(`, `),
+        },
       }}
     >
       <MDXRenderer>{post.body}</MDXRenderer>
