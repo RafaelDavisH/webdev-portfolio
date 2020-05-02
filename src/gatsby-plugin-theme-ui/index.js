@@ -26,7 +26,7 @@ const headingStyles = {
   },
   h5: {
     ...tailwind.styles.h5,
-    color: `heading`,
+    color: `primary`,
     fontSize: [1, 2, 3],
   },
   h6: {
@@ -43,18 +43,20 @@ export default {
   useCustomProperties: true,
   colors: {
     ...tailwind.colors,
-    primary: tailwind.colors.purple[7],
+    primary: `#FF9D00`,
     secondary: `#5f6c80`,
+    favColor: tailwind.colors.blue[9],
     toggleIcon: tailwind.colors.gray[8],
     heading: tailwind.colors.black,
     divide: tailwind.colors.gray[4],
     modes: {
       dark: {
-        text: tailwind.colors.gray[4],
-        primary: tailwind.colors.purple[5],
+        text: tailwind.colors.gray[1],
+        favColor: tailwind.colors.blue[4],
+        primary: `#ffc600`,
         secondary: `#7f8ea3`,
         toggleIcon: tailwind.colors.gray[4],
-        background: `#1A202C`,
+        background: `#15232D`,
         heading: tailwind.colors.white,
         divide: tailwind.colors.gray[8],
       },
@@ -77,6 +79,9 @@ export default {
       lineHeight: `body`,
       "--baseline-multiplier": 0.179,
       "--x-height-multiplier": 0.35,
+    },
+    em: {
+      color: `favColor`,
     },
     ...headingStyles,
     Container: {
