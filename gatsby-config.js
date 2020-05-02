@@ -40,14 +40,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-env-variables`,
       options: {
-        whitelist: ["CHANNEL_ID", "YOUTUBE_MODERNJSDEV_API_KEY"]
+        whitelist: ["GATSBY_CHANNEL_ID", "GATSBY_YOUTUBE_MODERNJSDEV_API_KEY"]
       },
     },
     {
       resolve: `gatsby-source-youtube-v2`,
       options: {
-        channelId: process.env.CHANNEL_ID,
-        apiKey: process.env.YOUTUBE_MODERNJSDEV_API_KEY,
+        channelId: process.env.GATSBY_CHANNEL_ID,
+        apiKey: process.env.GATSBY_YOUTUBE_MODERNJSDEV_API_KEY,
         maxVideos: 50 // Defaults to 50
       },
     },
