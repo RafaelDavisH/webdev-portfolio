@@ -2,7 +2,6 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import { Flex } from "@theme-ui/components";
 import Layout from '../../src/components/layout'
-import Img from 'gatsby-image'
 import styled from 'styled-components'
 
 

@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@lekoarts/gatsby-theme-minimal-blog": "^1.1.5",
+    "@theme-ui/components": "^0.3.1",
     "babel-plugin-styled-components": "^1.10.7",
     "date-fns": "^2.0.0-beta.5",
     "dotenv": "^8.2.0",
