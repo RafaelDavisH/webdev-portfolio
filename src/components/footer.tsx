@@ -1,16 +1,14 @@
 /** @jsx jsx */
-import { jsx, Styled } from "theme-ui"
-import { Flex } from "@theme-ui/components"
-import useSiteMetadata from "../hooks/use-site-metadata"
+import { jsx, Styled } from "theme-ui";
+import { Flex } from "@theme-ui/components";
+import Contact from "./contact";
 
 const Footer = () => {
-  const { siteTitle } = useSiteMetadata()
-
   return (
     <Flex
       as="footer"
       sx={{
-        variant: `dividers.top`,
+        backgroundColor: `contactColor`,
         justifyContent: `center`,
         mt: [6],
         color: `secondary`,
@@ -20,11 +18,9 @@ const Footer = () => {
         flexDirection: [`column`, `column`, `row`],
       }}
     >
-      <div>
-        &copy; {new Date().getFullYear()} by {siteTitle}. All rights reserved.
-      </div>
+      <Contact />
     </Flex>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

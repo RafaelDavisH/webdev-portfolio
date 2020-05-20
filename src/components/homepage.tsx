@@ -4,7 +4,6 @@ import { Link } from "gatsby";
 import Layout from "./layout";
 import Hero from "../texts/hero";
 import Bottom from "../texts/bottom";
-import Contact from "./contact";
 import Title from "./title";
 import Listing from "./listing";
 import List from "./list";
@@ -40,7 +39,6 @@ const Homepage = ({ posts }: PostsProps) => {
         </Link>
       </Title>
       <Listing posts={posts} showTags={false} />
-      <Contact />
     </Layout>
   );
 };

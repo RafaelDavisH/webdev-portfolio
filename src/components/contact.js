@@ -1,62 +1,64 @@
 import React from 'react';
-
-
-import styled from 'styled-components'
-
-const Form = styled.form`
-    display: flex;
-    flex-direction: column;
-    width: 500px;
-    align-items: center;
-    margin: auto;
-    input {
-        width: 100%;
-        height: 50px;
-        padding:  0.5em;
-        margin: 1.5em  0;
-        border: none;
-        border-radius: 3px;
-        background-color: lightblue;
-    };
-    label {
-        width: 100%;
-        font-weight: bold;
-    };
-
-    textarea {
-        width: 100%;
-        border-radius: 3px;
-        background-color: lightblue;
-    }
-
-    botton {
-
-    }
-`
+import '../utils/fontawesome'
+import useSiteMetadata from "../hooks/use-site-metadata";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Contact = () => {
+    const { siteTitle } = useSiteMetadata();
     return (
+<div className=" w-full flex justify-center">
+    <div className="flex flex-wrap max-w-screen-sm mb-6 ">
+            <h2 className="mt-12 font-medium text-gray-200 mx-auto text-4xl my-4">Get in touch</h2>
+        <form className="mt-12 bg-white w-full py-6 px-4 shadow-md rounded-md" method="post" netlify-honeypot="bot-field" data-netlify="true">
+            <input type="hidden" name="bot-field" />
+            <div className="flex flex-wrap -mx-3 mb-6">
+                <div className="w-full md:w-1/2 px-3 mb-6">
+                    <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="fullName">
+                        Full Name
+                    </label>
+                    <input
+                        className="appearance-none block w-full bg-white text-gray-700 border border-blue-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
+                        id="fullName" name="fullName" type="text" placeholder="Mark Florence" required />
+                </div>
+                <div className="w-full md:w-1/2 px-3 mb-6 ">
+                    <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="email">
+                        email
+                    </label>
+                    <input
+                        className="appearance-none block w-full bg-white text-gray-700 border border-blue-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
+                        id="email" name="email" type="email" placeholder="example@xzy.com" required />
+                </div>
+            </div>
+            <div className="flex flex-wrap -mx-3 mb-6">
+                <div className="w-full px-3">
+                    <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="company">
+                        Company
+                    </label>
+                    <input
+                        className="appearance-none block w-full bg-white text-gray-700 border border-blue-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
+                        id="company" name="company" type="text" placeholder="Optional" />
+                </div>
+            </div>
+            <div className="flex flex-wrap -mx-3 mb-6">
+                <div className="w-full px-3">
+                    <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="message">
+                        Message
+                    </label>
+                    <textarea
+                        className="appearance-none block w-full bg-white text-gray-700 border border-blue-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
+                        id="message" name="message" placeholder="Your message here...">
+                    </textarea>
+                </div>
+            </div>
+            <button type="submit"
+                className="float-right transition duration-500 ease-in-out bg-blue-400 hover:bg-blue-600 transform hover:-translate-y-1 hover:scale-110 text-white font-bold h-16 w-16 transform rounded-full" >
+                <FontAwesomeIcon icon="paper-plane" size="lg"className="-ml-1" />
+            </button>
+        </form>
 
-            <Form method="post" netlify-honeypot="bot-field" data-netlify="true">
-                <input type="hidden" name="bot-field" />
-                <label>
-                    Name
-                    <input type="text" name="name" id="name" />
-                </label>
-                <label>
-                    Email
-                    <input type="email" name="email" id="email" />
-                </label>
-                <label>
-                    Subject
-                    <input type="text" name="subject" id="subject" />
-                </label>
-                <label>
-                    Message
-                    <textarea name="message" id="message" rows="5" />
-                </label>
-                <button type="submit">Send</button>
-            </Form>
+       <p className="mx-auto mt-16 text-gray-200"> &copy; {new Date().getFullYear()} by {siteTitle}. All rights reserved.</p>
+    </div>
+</div>
     );
 };
 
