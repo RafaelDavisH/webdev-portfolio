@@ -27,7 +27,6 @@ const PublishedOn = styled.p`
 `
 export default ({ data }) => {
     const baseurl = 'https://www.youtube.com/watch?v=';
-    console.log(data)
     return  (
         <Layout>
             <Flex 

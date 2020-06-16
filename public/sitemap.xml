@@ -7,6 +7,6 @@
 <url> <loc>https://rafaeldavish.dev/about</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rafaeldavish.dev/tags/project</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rafaeldavish.dev/tags/team-collaboration</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://rafaeldavish.dev/instaPage/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rafaeldavish.dev/modernjsdev/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://rafaeldavish.dev/test/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
