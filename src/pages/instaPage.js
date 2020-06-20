@@ -1,11 +1,19 @@
 import React from 'react';
 import { Link } from "gatsby";
 import { useStaticQuery, graphql } from "gatsby"
+import {pulse, bounceIn }from 'react-animations'
+import styled, { keyframes } from 'styled-components';
 import Img from "gatsby-image"
 import useSiteMetadata from "../hooks/use-site-metadata";
 import replaceSlashes from "../utils/replaceSlashes";
 
 import bgPattern from  '../images/bgPattern.png'
+
+const pulseAnimation = keyframes`${pulse}`;
+
+const PulseDiv = styled.div`
+  animation: 1s infinite ${pulseAnimation};
+`;
 
 
 const extLinks = [
@@ -41,17 +49,19 @@ const InstaPage = () => {
     return (
         <div style={{backgroundImage: `url(${bgPattern})`}} className=" flex w-screen h-screen items-center justify-center flex-col gap-5">
             <div className="w-auto">
-            <Link
-                className="font-bold text-5xl"
-                to={replaceSlashes(`/${basePath}`)}
-                aria-label={`${siteTitle} - HomePage`}
-                sx={{ color: `heading`, textDecoration: `none` }}
-                >
-                {/* <h1 className="text-4xl text-center font-bold text-gray-200">
-                </h1> */}
-                <Img className="rounded-full w-32 mx-auto" fluid={data.file.childImageSharp.fluid} alt="profile pic" />
-                <p className="text-base text-center text-yellow-500">Web Developer </p>
-            </Link>
+            <PulseDiv>
+              <Link
+                  className="font-bold text-5xl"
+                  to={replaceSlashes(`/${basePath}`)}
+                  aria-label={`${siteTitle} - HomePage`}
+                  sx={{ color: `heading`, textDecoration: `none` }}
+                  >
+                  {/* <h1 className="text-4xl text-center font-bold text-gray-200">
+                  </h1> */}
+                  <Img className="rounded-full w-32 mx-auto" fluid={data.file.childImageSharp.fluid} alt="profile pic" />
+                  <p className="text-base text-center text-yellow-500">Web Developer </p>
+              </Link>
+            </PulseDiv>
             {LinksList}
             </div>
         </div>
