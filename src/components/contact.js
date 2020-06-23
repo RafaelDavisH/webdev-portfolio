@@ -6,46 +6,46 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const Contact = () => {
     const { siteTitle } = useSiteMetadata();
     return (
-<div className=" w-full flex justify-center">
+<div id="contact"className=" w-full flex justify-center">
     <div className="flex flex-wrap max-w-screen-sm mb-6 ">
-            <h2 className="mt-12 font-medium text-gray-200 mx-auto text-4xl my-4">Get in touch</h2>
-        <form className="mt-12 bg-white w-full py-6 px-4 shadow-md rounded-md" method="post" netlify-honeypot="bot-field" data-netlify="true">
+            <h2 className="mt-12 font-medium mx-auto text-6xl leading-none my-4">Let's Talk about your <br /><span className="text-3xl"> project, idea, or website to get started.</span></h2>
+        <form className="mt-12 text-gray-200 w-full py-6 px-4" method="post" netlify-honeypot="bot-field" data-netlify="true">
             <input type="hidden" name="bot-field" />
             <div className="flex flex-wrap -mx-3 mb-6">
                 <div className="w-full md:w-1/2 px-3 mb-6">
-                    <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="fullName">
+                    <label className="text-yellow-500 block uppercase tracking-wide text-sm font-bold mb-2" htmlFor="fullName">
                         Full Name
                     </label>
                     <input
-                        className="appearance-none block w-full bg-white text-gray-700 border border-blue-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
+                        className="appearance-none text-2xl block w-full  rounded py-3 px-4 leading-tight focus:outline-none focus:shadow-outline"
                         id="fullName" name="fullName" type="text" placeholder="Mark Florence" required />
                 </div>
                 <div className="w-full md:w-1/2 px-3 mb-6 ">
-                    <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="email">
+                    <label className="block uppercase tracking-wide mtext-s font-bold mb-2 text-yellow-500" htmlFor="email">
                         email
                     </label>
                     <input
-                        className="appearance-none block w-full bg-white text-gray-700 border border-blue-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
+                        className="appearance-none  text-2xl block w-full rounded py-3 px-4 leading-tight focus:outline-none focus:shadow-outline"
                         id="email" name="email" type="email" placeholder="example@xzy.com" required />
                 </div>
             </div>
             <div className="flex flex-wrap -mx-3 mb-6">
                 <div className="w-full px-3">
-                    <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="company">
+                    <label className="block uppercase tracking-wide text-sm text-yellow-500  mb-2" htmlFor="company">
                         Company
                     </label>
                     <input
-                        className="appearance-none block w-full bg-white text-gray-700 border border-blue-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
+                        className="appearance-none  text-2xl block w-full rounded py-3 px-4 leading-tight focus:outline-none focus:shadow-outline"
                         id="company" name="company" type="text" placeholder="Optional" />
                 </div>
             </div>
             <div className="flex flex-wrap -mx-3 mb-6">
                 <div className="w-full px-3">
-                    <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="message">
+                    <label className="block uppercase tracking-wide text-sm text-yellow-500  mb-2" htmlFor="message">
                         Message
                     </label>
                     <textarea
-                        className="appearance-none block w-full bg-white text-gray-700 border border-blue-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
+                        className="appearance-none text-2xl block w-full rounded py-3 px-4 leading-tight focus:outline-none focus:shadow-outline"
                         id="message" name="message" placeholder="Your message here...">
                     </textarea>
                 </div>

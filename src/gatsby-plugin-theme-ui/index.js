@@ -46,7 +46,7 @@ export default {
     primary: `#FF9D00`,
     secondary: `#5f6c80`,
     favColor: tailwind.colors.blue[9],
-    contactColor: `#35434d`,
+    contactColor: tailwind.colors.gray[1],
     toggleIcon: tailwind.colors.gray[8],
     heading: tailwind.colors.black,
     divide: tailwind.colors.gray[4],
@@ -54,7 +54,7 @@ export default {
       dark: {
         text: tailwind.colors.gray[1],
         favColor: tailwind.colors.blue[4],
-        contactColor: `#15232D`,
+        contactColor: tailwind.colors.gray[9],
         primary: `#ffc600`,
         secondary: `#7f8ea3`,
         toggleIcon: tailwind.colors.gray[4],

@@ -8,7 +8,17 @@ const Footer = () => {
     <Flex
       as="footer"
       sx={{
-        backgroundColor: `contactColor`,
+        input: {
+          backgroundColor: `contactColor`,
+          color: `text`,
+        },
+        textArea: {
+          backgroundColor: `contactColor`,
+          color: `text`,
+        },
+        h2: {
+          color: `heading`,
+        },
         justifyContent: `center`,
         mt: [6],
         color: `secondary`,
