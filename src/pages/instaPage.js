@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from "gatsby";
+import SEO from "../components/seo";
 import { useStaticQuery, graphql } from "gatsby"
 import {pulse, bounceIn }from 'react-animations'
 import styled, { keyframes } from 'styled-components';
@@ -48,6 +49,7 @@ const InstaPage = () => {
     const { siteTitle, basePath } = useSiteMetadata();
     return (
         <div style={{backgroundImage: `url(${bgPattern})`}} className=" flex w-screen h-screen items-center justify-center flex-col gap-5">
+        <SEO title="InstaPage" />
             <div className="w-auto">
             <PulseDiv>
               <Link

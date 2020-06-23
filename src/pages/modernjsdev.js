@@ -1,5 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
+import SEO from "../components/seo";
 import { Flex } from "@theme-ui/components";
 import Layout from '../../src/components/layout'
 import styled from 'styled-components'
@@ -28,7 +29,8 @@ const PublishedOn = styled.p`
 export default ({ data }) => {
     const baseurl = 'https://www.youtube.com/watch?v=';
     return  (
-        <Layout>
+        <Layout >
+            <SEO title="ModernJS Dev"/>
             <Flex 
                 sx={{
                     width: ['100%', '100%', '100%'],
