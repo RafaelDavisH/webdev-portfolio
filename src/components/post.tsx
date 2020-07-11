@@ -56,7 +56,6 @@ const Post = ({ data: { post } }: PostProps) => {
         title={post.title}
         description={post.description ? post.description : post.excerpt}
         image={socialImage}
-        // image={post.banner ? post.banner.childImageSharp.resize.src : undefined}
       />
       <Heading variant="h2" as="h2">
         {post.title}
