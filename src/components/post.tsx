@@ -50,7 +50,6 @@ const Post = ({ data: { post } }: PostProps) => {
     textColor: "232129",
   });
 
-  console.log(socialImage);
   return (
     <Layout>
       <SEO
