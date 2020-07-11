@@ -40,7 +40,9 @@ const shadow = px.map((v) => `rgba(0, 0, 0, 0.15) 0px ${v} ${v} 0px`);
 const Post = ({ data: { post } }: PostProps) => {
   const socialImage = getShareImage({
     title: post.title,
-    tagline: post.tags.map((tag) => `#${tag}`).join(" "),
+    tagline: post.tags
+      .map((tag) => `#${tag.name.split(" ").join("")}`)
+      .join(" "),
     cloudName: "rafaeldavish",
     imagePublicID: "Frame_4_3x_kutirc.png",
     titlefont: "futura",
@@ -48,6 +50,7 @@ const Post = ({ data: { post } }: PostProps) => {
     textColor: "232129",
   });
 
+  console.log(socialImage);
   return (
     <Layout>
       <SEO
