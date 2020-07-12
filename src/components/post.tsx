@@ -6,6 +6,8 @@ import React from "react";
 import Layout from "./layout";
 import ItemTags from "./item-tags";
 import SEO from "./seo";
+import getShareImage from "@jlengstorf/get-share-image";
+
 import { format } from "date-fns";
 
 type PostProps = {
@@ -37,24 +39,24 @@ const px = [`32px`, `16px`, `8px`, `4px`];
 const shadow = px.map((v) => `rgba(0, 0, 0, 0.15) 0px ${v} ${v} 0px`);
 
 const Post = ({ data: { post } }: PostProps) => {
-  // const socialImage = getShareImage({
-  //   title: post.title,
-  //   tagline: post.tags
-  //     .map((tag) => `#${tag.name.split(" ").join("")}`)
-  //     .join(" "),
-  //   cloudName: "rafaeldavish",
-  //   imagePublicID: "Frame_4_3x_kutirc.png",
-  //   titlefont: "futura",
-  //   titleExtraConfig: "_bold",
-  //   textColor: "232129",
-  // });
+  const socialImage = getShareImage({
+    title: post.title,
+    tagline: post.tags
+      .map((tag) => `#${tag.name.split(" ").join("")}`)
+      .join(" "),
+    cloudName: "rafaeldavish",
+    imagePublicID: "Frame_4_3x_kutirc.png",
+    titlefont: "futura",
+    titleExtraConfig: "_bold",
+    textColor: "232129",
+  });
 
   return (
     <Layout>
       <SEO
         title={post.title}
         description={post.description ? post.description : post.excerpt}
-        image={post.banner ? post.banner.childImageSharp.resize.src : undefined}
+        image={socialImage}
       />
 
       <Heading variant="h2" as="h2">
