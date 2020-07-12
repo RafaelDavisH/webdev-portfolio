@@ -55,7 +55,7 @@ const Post = ({ data: { post } }: PostProps) => {
     <Layout>
       <SEO
         title={post.title}
-        description={post.description ? post.description : post.excerpt}
+        description={socialImage.tagline}
         image={socialImage}
       />
 
