@@ -53,7 +53,7 @@ const SEO = ({ title, description, pathname, image, children }: Props) => {
       <meta property="og:image" content={seo.image} />
       <meta property="og:type" content="website" />
       <meta property="og:image:alt" content={seo.description} />
-      <meta name="twitter:card" content={seo.image} />
+      <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={seo.title} />
       <meta name="twitter:url" content={seo.url} />
       <meta name="twitter:description" content={seo.description} />
