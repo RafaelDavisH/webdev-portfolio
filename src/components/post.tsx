@@ -55,7 +55,9 @@ const Post = ({ data: { post } }: PostProps) => {
     <Layout>
       <SEO
         title={post.title}
-        description={socialImage.tagline}
+        description={post.tags
+          .map((tag) => `#${tag.name.split(" ").join("")}`)
+          .join(" ")}
         image={socialImage}
       />
 
