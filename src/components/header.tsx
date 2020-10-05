@@ -46,7 +46,12 @@ const Header = () => {
         <Navigation nav={nav} />
         <div sx={{ "a:not(:first-of-type)": { ml: 3 }, fontSize: [1, `18px`] }}>
           {externalLinks.map((link) => (
-            <Styled.a key={link.url} href={link.url}>
+            <Styled.a
+              key={link.url}
+              href={link.url}
+              target="__blank"
+              rel="noreferrer noopener"
+            >
               {link.name}
             </Styled.a>
           ))}

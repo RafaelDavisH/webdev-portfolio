@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from "gatsby";
 import SEO from "../components/seo";
 import { useStaticQuery, graphql } from "gatsby"
-import {pulse, bounceIn }from 'react-animations'
+import {pulse }from 'react-animations'
 import styled, { keyframes } from 'styled-components';
 import Img from "gatsby-image"
 import useSiteMetadata from "../hooks/use-site-metadata";
@@ -57,6 +57,8 @@ const InstaPage = () => {
                   to={replaceSlashes(`/${basePath}`)}
                   aria-label={`${siteTitle} - HomePage`}
                   sx={{ color: `heading`, textDecoration: `none` }}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   >
                   {/* <h1 className="text-4xl text-center font-bold text-gray-200">
                   </h1> */}

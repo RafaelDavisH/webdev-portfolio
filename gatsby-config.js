@@ -38,6 +38,20 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: "gatsby-remark-external-links",
+            options: {
+              target: "_blank",
+              rel: "nofollow noopener noreferrer"
+            }
+          }
+        ]
+      }
+    },
+    {
       resolve: `gatsby-plugin-env-variables`,
       options: {
         whitelist: ["GATSBY_CHANNEL_ID", "GATSBY_YOUTUBE_MODERNJSDEV_API_KEY"]
