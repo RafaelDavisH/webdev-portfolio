@@ -1,0 +1,106 @@
+---
+title: "useState"
+date: 2020-05-10
+tags:
+  - ReactJS
+  - UseState
+  - ReactHooks
+---
+
+> Related Project 🚀 <a href="" target="_blank" rel="noopener noreferrer"> Job Wishlist App</a>
+
+<img
+  src="useStateimg.jpg"
+  alt="drawing"
+  style="display: flex; margin: auto; overflow: hidden"
+  width="600"
+/>
+
+`useState` is a React Hook that lets you add React state to functional components and encapsulates local state management.
+
+<br />
+
+## React State
+
+React `state` is a built-in object used to store dynamic data and such determines the component's behavior. The state enables a component to keep track of changes and that is what makes React components interactive. Components that have state are referred to as stateful components while those that do not have states are referred to as stateless components. React manages each state independently. `useState` can work with an array, object, number, boolean, or string; the state can be any data type.
+
+<br />
+
+> Components that have state are referred to as stateful components while those that do not have states are referred to as stateless components.
+
+<br />
+
+```jsx
+import React from "react";
+// arrow function component
+const Greeting = () => {
+  // Declare a new state variable and a set function
+  const [user, setUser] = useState("userName");
+  // initial user state value its an "" empty string
+  return (
+    <div>
+      <p>Welcome back {user}!</p>
+    </div>
+  );
+};
+
+export default Greeting;
+```
+
+<br />
+
+## useState Hook?
+
+We can set a component's default state, access currents state, and update state with the `useState` hook. `useState` can be called from inside a function component or event handler to add local state. React will preserve this state between re-renders. When `useState` its called, it declares a 'state variable'. This will return the current state value and a function that allows you to update it.
+
+<br />
+
+**Example declaring the state variable**
+
+```jsx
+// current state is an empty string
+const [user, setUser] = useState("");
+```
+
+<br />
+
+## Updating State
+
+A change in the state can happen based on user-input, triggering an event, and on any other logic specified. Also, React stateful components are rendered based on the initial information. So when the state changes, React gets informed and immediately re-renders only the component in the DOM with the updated state. Essentially, useState is a special function that lets us abstract different pieces of complexity from our functional components.
+
+<br />
+
+**Example handles state changes by user's input**
+
+```jsx
+import React, { useState } from "react";
+
+const Greeting = () => {
+  const [user, setUser] = useState("");
+
+  const handleChange = (e) => {
+    setUser(e.target.value);
+  };
+  return (
+    <div className="App">
+      // Ternary operator set an initial Greeting if no input yet submitted
+      <h1>Hello {!user ? "My friend!" : user}</h1>
+      // onChange will trigger for every character user inputs // `handleChange`
+      updates the current state with the `setUser` function
+      <input type="text" onChange={handleChange} />
+    </div>
+  );
+};
+
+export default Greeting;
+```
+
+<br />
+
+## Square brackets
+
+`const [user, setUser] = useState(<UserName>);`
+
+This JavaScript syntax is called "array destructuring". It means that we're declaring two new variables `user` and `setUser`, where `user` is set to the first value return by `useState`, and `setUser` is the second value, which a set Function.
+
+<br />

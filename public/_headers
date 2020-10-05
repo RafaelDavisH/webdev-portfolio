@@ -69,6 +69,14 @@
   Link: </styles-c7b1a1db8b2124b49ab0.js>; rel=preload; as=script
   Link: </commons-dd982c234c9440f43c4d.js>; rel=preload; as=script
   Link: </component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-post-query-tsx-3b74fd3ead229a4ef4d7.js>; rel=preload; as=script
+/use-state
+  Link: </webpack-runtime-efe643730287d7525345.js>; rel=preload; as=script
+  Link: </styles-c7b1a1db8b2124b49ab0.js>; rel=preload; as=script
+  Link: </commons-dd982c234c9440f43c4d.js>; rel=preload; as=script
+  Link: </app-415c1e3edfbadd80c0f8.js>; rel=preload; as=script
+  Link: </styles-c7b1a1db8b2124b49ab0.js>; rel=preload; as=script
+  Link: </commons-dd982c234c9440f43c4d.js>; rel=preload; as=script
+  Link: </component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-post-query-tsx-3b74fd3ead229a4ef4d7.js>; rel=preload; as=script
 /freelance
   Link: </webpack-runtime-efe643730287d7525345.js>; rel=preload; as=script
   Link: </styles-c7b1a1db8b2124b49ab0.js>; rel=preload; as=script
@@ -78,6 +86,30 @@
   Link: </commons-dd982c234c9440f43c4d.js>; rel=preload; as=script
   Link: </component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-page-query-tsx-d9a050f193a1bcda2260.js>; rel=preload; as=script
 /tags/code-newbie
+  Link: </webpack-runtime-efe643730287d7525345.js>; rel=preload; as=script
+  Link: </styles-c7b1a1db8b2124b49ab0.js>; rel=preload; as=script
+  Link: </commons-dd982c234c9440f43c4d.js>; rel=preload; as=script
+  Link: </app-415c1e3edfbadd80c0f8.js>; rel=preload; as=script
+  Link: </styles-c7b1a1db8b2124b49ab0.js>; rel=preload; as=script
+  Link: </commons-dd982c234c9440f43c4d.js>; rel=preload; as=script
+  Link: </component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-tag-query-tsx-12c40796244fc959d579.js>; rel=preload; as=script
+/tags/react-hooks
+  Link: </webpack-runtime-efe643730287d7525345.js>; rel=preload; as=script
+  Link: </styles-c7b1a1db8b2124b49ab0.js>; rel=preload; as=script
+  Link: </commons-dd982c234c9440f43c4d.js>; rel=preload; as=script
+  Link: </app-415c1e3edfbadd80c0f8.js>; rel=preload; as=script
+  Link: </styles-c7b1a1db8b2124b49ab0.js>; rel=preload; as=script
+  Link: </commons-dd982c234c9440f43c4d.js>; rel=preload; as=script
+  Link: </component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-tag-query-tsx-12c40796244fc959d579.js>; rel=preload; as=script
+/tags/react-js
+  Link: </webpack-runtime-efe643730287d7525345.js>; rel=preload; as=script
+  Link: </styles-c7b1a1db8b2124b49ab0.js>; rel=preload; as=script
+  Link: </commons-dd982c234c9440f43c4d.js>; rel=preload; as=script
+  Link: </app-415c1e3edfbadd80c0f8.js>; rel=preload; as=script
+  Link: </styles-c7b1a1db8b2124b49ab0.js>; rel=preload; as=script
+  Link: </commons-dd982c234c9440f43c4d.js>; rel=preload; as=script
+  Link: </component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-tag-query-tsx-12c40796244fc959d579.js>; rel=preload; as=script
+/tags/use-state
   Link: </webpack-runtime-efe643730287d7525345.js>; rel=preload; as=script
   Link: </styles-c7b1a1db8b2124b49ab0.js>; rel=preload; as=script
   Link: </commons-dd982c234c9440f43c4d.js>; rel=preload; as=script
